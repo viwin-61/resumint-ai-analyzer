@@ -1,0 +1,28 @@
+# Dependencies and build output
+node_modules/
+**/node_modules/
+client/dist/
+server/dist/
+coverage/
+playwright-report/
+test-results/
+.playwright-mcp/
+work/
+outputs/
+
+# Local environment and secrets
+.env
+.env.*
+!.env.example
+client/.env
+server/.env
+
+# Local tooling and editor files
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/*
+!.vscode/extensions.json
+*.log
+pnpm-debug.log*
+.netlify/

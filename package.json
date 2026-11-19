@@ -1,0 +1,26 @@
+{
+  "name": "resumint-resume-ai",
+  "private": true,
+  "version": "0.1.0",
+  "packageManager": "pnpm@11.25.0",
+  "engines": {
+    "node": ">=22.12.0"
+  },
+  "scripts": {
+    "dev": "pnpm --filter @resumint/client dev",
+    "dev:client": "pnpm --filter @resumint/client dev",
+    "dev:server": "pnpm --filter @resumint/server dev",
+    "build": "pnpm --filter @resumint/client build",
+    "preview": "pnpm --filter @resumint/client preview",
+    "test:api": "pnpm --filter @resumint/server test",
+    "seed:demo": "pnpm --filter @resumint/server seed:demo",
+    "generate:sample-resume": "pnpm --filter @resumint/server generate:sample-resume",
+    "test:e2e": "playwright test"
+  },
+  "dependencies": {
+    "serverless-http": "^4.0.0"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.65.1"
+  }
+}

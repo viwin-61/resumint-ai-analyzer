@@ -1,0 +1,5 @@
+packages:
+  - client
+  - server
+minimumReleaseAgeExclude:
+  - openai@7.59.0
